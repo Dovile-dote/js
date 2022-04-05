@@ -6,7 +6,8 @@ Sablonai:
 - if () {} else {}
 - if () {} else if {}
 - if () {} else if {} else {}
-- if () {} else if {} else if {} else if {} else {}
+- if () {} else if {} ... else if {} 
+- if () {} else if {} ... {} else if {} else {}
 
 Palyginimo operatoriai:
 - visi: >, <, <=, >=, ==, !=, ===, !==
@@ -21,6 +22,14 @@ if (a > b) {
     console.log('A yra daugiau uz B');
 } else {
     console.log('A nera daugiau uz B');
+}
+
+const c = '5';
+
+if (a !== c) {
+    console.log('A nera lygu C');
+} else {
+    console.log('A yra lygu B');
 }
 
 console.log('---------------');
@@ -48,7 +57,7 @@ console.log('-------------');
 const akiuSpalva = 'ruda';
 
 if (akiuSpalva === 'zalia') {
-    console.log('Zaliaakiai yra zalciai!')
+    console.log('Zaliaakiai yra zalciai!');
 } else {
     if (akiuSpalva === 'melyna') {
         console.log('Melynakiai megsta melynes.');    
@@ -67,9 +76,9 @@ if (akiuSpalva === 'zalia') {
 
 console.log('-------------');
 
-const temperatura = 25;
+const temperatura = -25;
 const nuoKadaLaikomeJogSilta = 15;
-const arYraKrituliu = true;
+const arYraKrituliu = false;
 
 if (arYraKrituliu) {
     if (temperatura >= nuoKadaLaikomeJogSilta) {
@@ -83,4 +92,22 @@ if (arYraKrituliu) {
     } else {
         console.log('Be striukes neapsieisi.');
     }
+}
+
+const akys = 'melynos';
+const plaukai = 'tamsus';
+const amzius = 20;
+
+if ((akys === 'melynos' || plaukai === 'tamsus') && amzius >= 20) {
+    console.log('Eisiu i pasimatyma');
+} else {
+    console.log('Pasimatymo nebus');
+}
+
+const priemone = 'dviratis';
+
+if (priemone === 'dviratis' || priemone === 'motoroleris' || priemone === 'automobilis') {
+    console.log('Kelione nusimato');
+} else {
+    console.log('Keliones nenusimato');
 }

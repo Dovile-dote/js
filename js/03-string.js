@@ -21,8 +21,11 @@ console.log(viengubaKabute);
 const dvigubaKabute = 'dvigubos (")';
 console.log(dvigubaKabute);
 
-const kabutes12 = 'Cia yra vienguba (\') ir dviguba (") kabutes.';
-console.log(kabutes12);
+const viengubaKabute12 = 'Cia yra vienguba (\') ir dviguba (") kabutes.';
+console.log(viengubaKabute12);
+
+const dvigubaKabute12 = "Cia yra vienguba (') ir dviguba (\") kabutes.";
+console.log(dvigubaKabute12);
 
 const clientName = 'Maryte';
 const clientAge = '87';
@@ -35,9 +38,10 @@ console.log(backtickClient);
 
 const n1 = 7;
 const n2 = 5;
-const ats = `${n1} + ${n2} = ${n1 + n2}`;
+const rez = n1 + n2;
+const ats = `${n1} + ${n2} = ${rez}`;
 console.log(ats);
 
-const abc = 'abcdef';
+const abc = 'ab"cd\'e\\\\f';
 const abcDydis = abc.length;
 console.log(`Abecele "${abc}" dydis yra ${abcDydis} simboliu.`);

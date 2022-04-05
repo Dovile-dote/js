@@ -1,5 +1,5 @@
 /*
-LOOP: for, while, for-in, for-of, foreach, ...
+LOOP: for, while, for-of, foreach, ...
 OBJECT LOOP: for-in
 */
 

@@ -21,6 +21,7 @@ const begalybe = Infinity;
 
 const pirmas = 'Labas';
 const antras = 'rytas';
+
 const dalmuo = pirmas / antras;
 console.log(dalmuo);
 
@@ -36,11 +37,35 @@ console.log(7 - '5');
 console.log(7 * '5');
 console.log(7 / '5');
 
-console.log('string; string(num)');
+console.log('string(num); num');
+console.log('7' + 5);
+console.log('7' - 5);
+console.log('7' * 5);
+console.log('7' / 5);
+
+console.log('string(num); string(num)');
 console.log('7' + '5');
 console.log('7' - '5');
 console.log('7' * '5');
 console.log('7' / '5');
+
+console.log('num; string');
+console.log(7 + 'b');
+console.log(7 - 'b');
+console.log(7 * 'b');
+console.log(7 / 'b');
+
+console.log('string; num');
+console.log('a' + 5);
+console.log('a' - 5);
+console.log('a' * 5);
+console.log('a' / 5);
+
+console.log('string; string');
+console.log('a' + 'b');
+console.log('a' - 'b');
+console.log('a' * 'b');
+console.log('a' / 'b');
 
 console.log('num; true');
 console.log(7 + true);
@@ -106,6 +131,7 @@ console.log('Skola: ', --skolaBefore);
 console.log('Skola: ', --skolaBefore);
 console.log('Skola: ', --skolaBefore);
 
+console.log('----------');
 let a = 0;
 console.log(a);
 a = a + 1;
@@ -130,6 +156,12 @@ console.log(b);
 console.log('-------');
 let c = 16;
 const d = 2;
+console.log(c);
+c = c / d;
+console.log(c)
+c /= d;
+console.log(c);
+c /= d;
 console.log(c);
 c /= d;
 console.log(c);

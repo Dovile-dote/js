@@ -3,7 +3,7 @@ const antras = 5;
 
 // iprasta funkcija
 function suma(a, b) {
-    return a +b;
+    return a + b;
 }
 const r1 = suma(pirmas, antras);
 console.log(r1);
